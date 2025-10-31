@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background: #717171;
+  background: #383737;
   color: white;
   text-align: center;;
   padding: 20px;
@@ -20,7 +20,6 @@ header {
 .container{
     font-size: 25px;
     font-weight: 350;
-  color: #000000;
 }
 .width{
     font-size: 20px;
@@ -40,11 +39,19 @@ header {
   text-decoration: none;
   padding: 8px 15px;
   border-radius: 5px;
+  transform: 0.3s ease;
+  background-color: #585656;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.273);
+  transform: 0.5s ease;
 }
 
-.nav li a:hover, .nav li a.active {
+.nav li a:hover {
+  transition:transform scale(2 0.3s ease-in-out); 
   background: #ffffff;
   color: #283593;
+}
+.nav li a.active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .intro{
     border-radius: 10px;
@@ -77,11 +84,13 @@ header {
   transform: 0.3s ease;
 }
 .btn:hover {
-  background: #cf6c1a;
+  transition: 0.3s ease-in-out;
+  background: #db6f02f8;
 }
 .profile {
   width: 300px;
   margin: 0 auto 15px;
+  opacity: 0.95;
 }
 
 table {
